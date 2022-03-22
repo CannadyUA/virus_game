@@ -1,0 +1,226 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*=========================Стили для страницы==========================*/
+body {
+	font-family: 'Press Start 2P', cursive;
+	position: relative;
+	background-image: url(images/background.png);
+}
+/*=========================Стили игрового поля==========================*/
+#game_area {
+	margin: 50px auto;
+    position: relative;
+    width: 820px;
+    height: 513px;
+    background-image: url(images/playfild.png);
+    overflow: hidden;
+    border: 5px solid;
+    cursor: url(images/injmini.png), default;
+    box-shadow: 0 30px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/*============================rules=====================================*/
+#rules {
+    position: absolute;
+    right: 10px;
+    top: 300px;
+    z-index: 9999;
+}
+
+#text {
+	position: absolute;
+    width: 310px;
+    right: 164px;
+    height: 358px;
+    top: 33px;
+    background: url(images/buble.png);
+    z-index: 9999;
+
+}
+
+
+#win_dr {
+	z-index: 9999;
+    position: absolute;
+    left: 10px;
+    top: 300px;
+    display: none;
+}
+
+ #text_win {
+	position: absolute;
+    width: 253px;
+    height: 206px;
+    left: 195px;
+    top: 125px;
+    background: url(images/speak.png);
+    z-index: 9999;
+    display: none;
+}
+/*=======================Стили доктора============================*/
+#enemy {
+ 	position: absolute; 
+    background-image: url(images/mario.png);
+    top: 375px;
+    left: 370px;
+    width: 77px;
+    height: 125px;
+}
+/*====================Стили микробов===============================*/
+.virus {
+	position: absolute;
+    top: -50px;
+    left: 300px;
+	width: 50px;
+	height: 50px;
+	background: url(images/blue.gif);
+	 transition: all 0s;
+}
+
+.blue {
+	background: url(images/blue.gif);
+}
+
+.red {
+	background: url(images/red.gif);
+}
+
+.yellow {
+	background: url(images/yellow.gif);
+}
+
+
+/*======================Стили пилюль=============================*/
+#pill {
+	position: absolute;
+	width: 50px;
+	height: 30px;
+	background: red;
+	left: 400px;
+}
+/*=========================Стили начального экрана==========================*/
+#start_screen {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/startbg1.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+/*=========================Стили кнопки Start game==========================*/
+#start_button {
+	padding: 22px;
+    position: absolute;
+    top: 179px;
+    left: 278px;
+    color: #e7d019;
+    width: 250px;
+    text-align: center;
+    font-size: 40px;
+    outline: none;
+    cursor: url(images/injmini.png), pointer;
+}	
+
+#start_button:active {
+	
+	color: #000;
+}
+/*=========================Стили блока жизней==========================*/
+#lifes{
+	position: absolute;
+    top: 455px;
+    right: 8px;	
+}
+
+#lifes span {
+	display: block;
+	width: 60px;
+	height: 53px;
+	margin-left: 3px;
+	
+	background: url(images/hp.png);
+	float: left;
+}
+/*=======================Стили блока таймер============================*/
+#info-block h2 {
+	font-size: 16px;
+	color: white;
+	color: #fff;
+    position: absolute;
+    top: 28px;
+    left: 10px;	
+}
+/*===============================Стили блока очков========================*/
+#score {
+	font-size: 44px;
+    color: #fff;
+    position: absolute;
+    top: 445px;
+    left: 50px;	
+}
+/*=========================Стили эрана окончания игры==========================*/
+#over_screen {
+	width: 100%;
+	height: 100%;
+	background: url(images/losebg.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+		
+}
+
+#over_screen h2 {
+    color: #fff;
+    position: absolute;
+    top: 135px;
+    left: 275px;
+    font-size: 35px;
+}
+
+#over_time h2 {
+	color: #fff;
+	position: absolute;
+    top: 135px;
+    left: 236px;
+    font-size: 35px;
+}
+
+#over_screen p,
+#over_time p {
+	color: #fff;
+	position: absolute;
+    top: 215px;
+    left: 245px;
+    font-size: 22px;
+}
+/*=========================Стили кнопки Play again==========================*/
+#over_screen span,
+#over_time span {
+	position: absolute;
+    top: 330px;
+    left: 300px;
+    padding: 20px;
+    outline: none;
+    cursor: url(images/injmini.png), pointer;
+    color: #000;
+    background: url(images/pill.png);
+}
+
+#over_screen span:active,
+#over_time span:active {
+	
+	color: #fff;
+} 
+
+#over_time {
+	width: 100%;
+	height: 100%;
+	background: url(images/playfild.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	
+}
+
